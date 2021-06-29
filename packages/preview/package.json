@@ -1,0 +1,11 @@
+{
+  "name": "cli",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "/lib/**/*"
+  ],
+  "scripts": {
+    "build": "rimraf lib tsconfig.tsbuildinfo && tsc --build"
+  }
+}
