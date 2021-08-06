@@ -1,11 +1,22 @@
 {
-  "name": "cli",
+  "name": "vite-preview",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
     "/lib/**/*"
   ],
   "scripts": {
-    "build": "rimraf lib tsconfig.tsbuildinfo && tsc --build"
+    "build": "rimraf lib tsconfig.tsbuildinfo && tsc --build",
+    "test": "jest --coverage"
+  },
+  "dependencies": {
+    "execa": "^5.1.1",
+    "fs-extra": "^10.0.0",
+    "semver": "^7.3.5",
+    "vite": "^2.4.1"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.12",
+    "@types/semver": "^7.3.7"
   }
 }
