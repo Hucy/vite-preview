@@ -1,9 +1,6 @@
 {
   "name": "vite-preview",
   "private": true,
-  "scripts": {
-    "build": "pnpm run build --filter ./packages"
-  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
