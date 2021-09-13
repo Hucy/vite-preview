@@ -27,6 +27,7 @@ jobs:
           node-version: '14'
           registry-url: https://registry.npmjs.org
           scope: '@tone.'
+      - run: npm config rm https-proxy
       - run: npm i -g pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm build --filter ./packages${{ github.event.inputs.package }}
