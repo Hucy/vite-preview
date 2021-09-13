@@ -27,6 +27,7 @@ jobs:
           node-version: '14'
           registry-url: https://registry.npmjs.org
           scope: '@tone.'
+      - run: cat /home/runner/work/_temp/.npmrc
       - run: npm config rm https-proxy
       - run: npm i -g pnpm
       - run: pnpm install --frozen-lockfile
